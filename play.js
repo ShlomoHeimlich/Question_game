@@ -5,7 +5,7 @@ const arr_questions=[filelImport.questions1,filelImport.questions2,filelImport.q
 const yuser_name=new yuser();
 function_play(arr_questions);
     
-console.log('ahlomo')
+
 
 
 
