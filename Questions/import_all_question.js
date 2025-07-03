@@ -1,4 +1,12 @@
-import questions1 from './Questions1.js';
-import questions2 from './Questions2.js';
-import questions3 from './Questions3.js';
-export { questions1, questions2, questions3 };
+import { readFile, stat } from "node:fs/promises"
+
+export async function ReadAllQuestions(){
+    try{
+       let all_questions = await readFile("./questions/Questions.json","utf8")
+       all_questions=JSON.parse(all_questions)
+       return all_questions
+    }catch (err){
+            console.log(err.message)
+    }
+}
+ 
