@@ -1,4 +1,4 @@
-import { readFile, stat } from "node:fs/promises"
+import { readFile} from "node:fs/promises"
 
 export async function ReadAllQuestions(){
     try{
@@ -9,4 +9,5 @@ export async function ReadAllQuestions(){
             console.log(err.message)
     }
 }
+console.log('sdlomo');
  
